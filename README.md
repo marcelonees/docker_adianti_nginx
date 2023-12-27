@@ -12,16 +12,9 @@ docker build -t marcelonees/adianti_nginx:php-7.4 .
 ```
 docker run -d --network=host -p 880:880 -v $HOME/Documentos/sua_template_adianti/:/var/www/html marcelonees/adianti_nginx:php-7.4
 ```
-
-### Caso seja alterado algo do arquivo de texto Dockerfile é necessário usar o comando novamente para atualizar a imagem:
+> [!NOTE]
+> Caso seja alterado algo no Dockerfile, será necessário atualizar a imagem:
 
 ```
 docker build -t  .
 ```
-
-### Para ver se a imagem foi criada:
-
-```
-docker images
-```
-
